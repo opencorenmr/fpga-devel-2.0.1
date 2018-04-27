@@ -1,0 +1,291 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 00:09:05  March 12, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		opencoreNMR_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C80F780C8
+set_global_assignment -name TOP_LEVEL_ENTITY opencoreNMR
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:09:05  MARCH 12, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_B22 -to ADOCLK
+set_location_assignment PIN_C4 -to AMCLK1
+set_location_assignment PIN_F12 -to AMCLK2
+set_location_assignment PIN_D19 -to AMCLK3
+set_location_assignment PIN_Y2 -to CLK1
+set_location_assignment PIN_Y3 -to COS1[9]
+set_location_assignment PIN_Y4 -to COS1[8]
+set_location_assignment PIN_AA3 -to COS1[7]
+set_location_assignment PIN_AA4 -to COS1[6]
+set_location_assignment PIN_AB1 -to COS1[5]
+set_location_assignment PIN_AB2 -to COS1[4]
+set_location_assignment PIN_AC1 -to COS1[3]
+set_location_assignment PIN_AC2 -to COS1[2]
+set_location_assignment PIN_AD1 -to COS1[1]
+set_location_assignment PIN_AD2 -to COS1[0]
+set_location_assignment PIN_AB9 -to COS2[9]
+set_location_assignment PIN_AF7 -to COS2[8]
+set_location_assignment PIN_AE7 -to COS2[7]
+set_location_assignment PIN_AF8 -to COS2[6]
+set_location_assignment PIN_AE8 -to COS2[5]
+set_location_assignment PIN_AC7 -to COS2[4]
+set_location_assignment PIN_AD8 -to COS2[3]
+set_location_assignment PIN_AF10 -to COS2[2]
+set_location_assignment PIN_AE10 -to COS2[1]
+set_location_assignment PIN_AE11 -to COS2[0]
+set_location_assignment PIN_AG17 -to COS3[9]
+set_location_assignment PIN_AH17 -to COS3[8]
+set_location_assignment PIN_AG18 -to COS3[7]
+set_location_assignment PIN_AH18 -to COS3[6]
+set_location_assignment PIN_AG19 -to COS3[5]
+set_location_assignment PIN_AH19 -to COS3[4]
+set_location_assignment PIN_AG21 -to COS3[3]
+set_location_assignment PIN_AH21 -to COS3[2]
+set_location_assignment PIN_AF19 -to COS3[1]
+set_location_assignment PIN_AF20 -to COS3[0]
+set_location_assignment PIN_C12 -to F1AMP[9]
+set_location_assignment PIN_D10 -to F1AMP[8]
+set_location_assignment PIN_C10 -to F1AMP[7]
+set_location_assignment PIN_C9 -to F1AMP[6]
+set_location_assignment PIN_D9 -to F1AMP[5]
+set_location_assignment PIN_C8 -to F1AMP[4]
+set_location_assignment PIN_D8 -to F1AMP[3]
+set_location_assignment PIN_C7 -to F1AMP[2]
+set_location_assignment PIN_D7 -to F1AMP[1]
+set_location_assignment PIN_D4 -to F1AMP[0]
+set_location_assignment PIN_AH7 -to F1FREQ_ADD[5]
+set_location_assignment PIN_AG7 -to F1FREQ_ADD[4]
+set_location_assignment PIN_AH6 -to F1FREQ_ADD[3]
+set_location_assignment PIN_AG6 -to F1FREQ_ADD[2]
+set_location_assignment PIN_AH4 -to F1FREQ_ADD[1]
+set_location_assignment PIN_AG4 -to F1FREQ_ADD[0]
+set_location_assignment PIN_U2 -to F1FREQ_D[7]
+set_location_assignment PIN_U1 -to F1FREQ_D[6]
+set_location_assignment PIN_AH11 -to F1FREQ_D[5]
+set_location_assignment PIN_AG11 -to F1FREQ_D[4]
+set_location_assignment PIN_AH10 -to F1FREQ_D[3]
+set_location_assignment PIN_AG10 -to F1FREQ_D[2]
+set_location_assignment PIN_AH8 -to F1FREQ_D[1]
+set_location_assignment PIN_AG8 -to F1FREQ_D[0]
+set_location_assignment PIN_V2 -to F1FREQ_FUD
+set_location_assignment PIN_W2 -to F1FREQ_PS0
+set_location_assignment PIN_W1 -to F1FREQ_PS1
+set_location_assignment PIN_AF3 -to F1FREQ_RD
+set_location_assignment PIN_V4 -to F1FREQ_RST
+set_location_assignment PIN_AH3 -to F1FREQ_WR
+set_location_assignment PIN_P2 -to F1GATE
+set_location_assignment PIN_V1 -to F1SYNCLK
+set_location_assignment PIN_J3 -to F1TTL[1]
+set_location_assignment PIN_K2 -to F1TTL[0]
+set_location_assignment PIN_L1 -to F1UNBLANK_NEG
+set_location_assignment PIN_M2 -to F1UNBLANK_POS
+set_location_assignment PIN_E21 -to F2AMP[9]
+set_location_assignment PIN_C15 -to F2AMP[8]
+set_location_assignment PIN_D15 -to F2AMP[7]
+set_location_assignment PIN_H13 -to F2AMP[6]
+set_location_assignment PIN_G13 -to F2AMP[5]
+set_location_assignment PIN_E14 -to F2AMP[4]
+set_location_assignment PIN_F14 -to F2AMP[3]
+set_location_assignment PIN_D14 -to F2AMP[2]
+set_location_assignment PIN_C13 -to F2AMP[1]
+set_location_assignment PIN_E12 -to F2AMP[0]
+set_location_assignment PIN_AE15 -to F2FREQ_ADD[5]
+set_location_assignment PIN_AD15 -to F2FREQ_ADD[4]
+set_location_assignment PIN_AC15 -to F2FREQ_ADD[3]
+set_location_assignment PIN_AE12 -to F2FREQ_ADD[2]
+set_location_assignment PIN_AF12 -to F2FREQ_ADD[1]
+set_location_assignment PIN_U6 -to F2FREQ_ADD[0]
+set_location_assignment PIN_AH23 -to F2FREQ_D[7]
+set_location_assignment PIN_AE18 -to F2FREQ_D[6]
+set_location_assignment PIN_AF18 -to F2FREQ_D[5]
+set_location_assignment PIN_AF17 -to F2FREQ_D[4]
+set_location_assignment PIN_AE17 -to F2FREQ_D[3]
+set_location_assignment PIN_AE16 -to F2FREQ_D[2]
+set_location_assignment PIN_AF16 -to F2FREQ_D[1]
+set_location_assignment PIN_AF15 -to F2FREQ_D[0]
+set_location_assignment PIN_AG25 -to F2FREQ_FUD
+set_location_assignment PIN_AG26 -to F2FREQ_PS0
+set_location_assignment PIN_AH26 -to F2FREQ_PS1
+set_location_assignment PIN_U4 -to F2FREQ_RD
+set_location_assignment PIN_AE27 -to F2FREQ_RST
+set_location_assignment PIN_U5 -to F2FREQ_WR
+set_location_assignment PIN_H6 -to F2GATE
+set_location_assignment PIN_AG23 -to F2SYNCLK
+set_location_assignment PIN_F1 -to F2TTL[1]
+set_location_assignment PIN_G3 -to F2TTL[0]
+set_location_assignment PIN_G1 -to F2UNBLANK_NEG
+set_location_assignment PIN_H3 -to F2UNBLANK_POS
+set_location_assignment PIN_G15 -to F3AMP[9]
+set_location_assignment PIN_G17 -to F3AMP[8]
+set_location_assignment PIN_F22 -to F3AMP[7]
+set_location_assignment PIN_E17 -to F3AMP[6]
+set_location_assignment PIN_F18 -to F3AMP[5]
+set_location_assignment PIN_E18 -to F3AMP[4]
+set_location_assignment PIN_D18 -to F3AMP[3]
+set_location_assignment PIN_C18 -to F3AMP[2]
+set_location_assignment PIN_D20 -to F3AMP[1]
+set_location_assignment PIN_C20 -to F3AMP[0]
+set_location_assignment PIN_AD17 -to F3FREQ_ADD[5]
+set_location_assignment PIN_AB28 -to F3FREQ_ADD[4]
+set_location_assignment PIN_AB27 -to F3FREQ_ADD[3]
+set_location_assignment PIN_AC28 -to F3FREQ_ADD[2]
+set_location_assignment PIN_AC27 -to F3FREQ_ADD[1]
+set_location_assignment PIN_AD28 -to F3FREQ_ADD[0]
+set_location_assignment PIN_W25 -to F3FREQ_D[7]
+set_location_assignment PIN_Y24 -to F3FREQ_D[6]
+set_location_assignment PIN_Y23 -to F3FREQ_D[5]
+set_location_assignment PIN_AC25 -to F3FREQ_D[4]
+set_location_assignment PIN_AC24 -to F3FREQ_D[3]
+set_location_assignment PIN_AA16 -to F3FREQ_D[2]
+set_location_assignment PIN_AB16 -to F3FREQ_D[1]
+set_location_assignment PIN_AC17 -to F3FREQ_D[0]
+set_location_assignment PIN_W28 -to F3FREQ_FUD
+set_location_assignment PIN_V26 -to F3FREQ_PS0
+set_location_assignment PIN_V25 -to F3FREQ_PS1
+set_location_assignment PIN_AE28 -to F3FREQ_RD
+set_location_assignment PIN_V27 -to F3FREQ_RST
+set_location_assignment PIN_AD27 -to F3FREQ_WR
+set_location_assignment PIN_F3 -to F3GATE
+set_location_assignment PIN_W26 -to F3SYNCLK
+set_location_assignment PIN_L5 -to F3TTL[1]
+set_location_assignment PIN_F5 -to F3TTL[0]
+set_location_assignment PIN_G6 -to F3UNBLANK_NEG
+set_location_assignment PIN_D3 -to F3UNBLANK_POS
+set_location_assignment PIN_G27 -to GZ[9]
+set_location_assignment PIN_H26 -to GZ[8]
+set_location_assignment PIN_H24 -to GZ[7]
+set_location_assignment PIN_J26 -to GZ[6]
+set_location_assignment PIN_J25 -to GZ[5]
+set_location_assignment PIN_K26 -to GZ[4]
+set_location_assignment PIN_K25 -to GZ[3]
+set_location_assignment PIN_K27 -to GZ[2]
+set_location_assignment PIN_L28 -to GZ[1]
+set_location_assignment PIN_L26 -to GZ[0]
+set_location_assignment PIN_N26 -to GZCLK
+set_location_assignment PIN_AE9 -to INVRUN
+set_location_assignment PIN_AD10 -to INVTRANSBUSY
+set_location_assignment PIN_AE4 -to OCLK1a
+set_location_assignment PIN_AF11 -to OCLK2a
+set_location_assignment PIN_AF25 -to OCLK3a
+set_location_assignment PIN_A23 -to RCVR_PWDN
+set_location_assignment PIN_A11 -to RD
+set_location_assignment PIN_AE13 -to RST
+set_location_assignment PIN_A10 -to RxD
+set_location_assignment PIN_A12 -to RXF
+set_location_assignment PIN_G12 -to SIG[13]
+set_location_assignment PIN_G14 -to SIG[12]
+set_location_assignment PIN_D6 -to SIG[11]
+set_location_assignment PIN_C26 -to SIG[10]
+set_location_assignment PIN_B26 -to SIG[9]
+set_location_assignment PIN_C25 -to SIG[8]
+set_location_assignment PIN_D25 -to SIG[7]
+set_location_assignment PIN_C24 -to SIG[6]
+set_location_assignment PIN_D24 -to SIG[5]
+set_location_assignment PIN_C22 -to SIG[4]
+set_location_assignment PIN_D21 -to SIG[3]
+set_location_assignment PIN_A26 -to SIG[2]
+set_location_assignment PIN_A25 -to SIG[1]
+set_location_assignment PIN_B23 -to SIG[0]
+set_location_assignment PIN_M5 -to TRIG_E
+set_location_assignment PIN_H7 -to TTL_GND[11]
+set_location_assignment PIN_G5 -to TTL_GND[10]
+set_location_assignment PIN_C2 -to TTL_GND[9]
+set_location_assignment PIN_E3 -to TTL_GND[8]
+set_location_assignment PIN_G4 -to TTL_GND[7]
+set_location_assignment PIN_G2 -to TTL_GND[6]
+set_location_assignment PIN_H4 -to TTL_GND[5]
+set_location_assignment PIN_H5 -to TTL_GND[4]
+set_location_assignment PIN_J4 -to TTL_GND[3]
+set_location_assignment PIN_K1 -to TTL_GND[2]
+set_location_assignment PIN_M1 -to TTL_GND[1]
+set_location_assignment PIN_P1 -to TTL_GND[0]
+set_location_assignment PIN_B10 -to TxD
+set_location_assignment PIN_B12 -to TXE
+set_location_assignment PIN_A17 -to USBDATA[7]
+set_location_assignment PIN_B17 -to USBDATA[6]
+set_location_assignment PIN_A18 -to USBDATA[5]
+set_location_assignment PIN_B18 -to USBDATA[4]
+set_location_assignment PIN_A19 -to USBDATA[3]
+set_location_assignment PIN_B19 -to USBDATA[2]
+set_location_assignment PIN_B21 -to USBDATA[1]
+set_location_assignment PIN_A21 -to USBDATA[0]
+set_location_assignment PIN_B11 -to WR
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ON
+set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
+set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIXII NORMAL
+set_global_assignment -name ROUTER_CLOCKING_TOPOLOGY_ANALYSIS ON
+set_global_assignment -name MUX_RESTRUCTURE OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to F2SYNCLK
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to F3SYNCLK
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to F1SYNCLK
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to CLK1
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:U1|altpll:altpll_component|pll_altpll:auto_generated|clk[0]"
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:U1|altpll:altpll_component|pll_altpll:auto_generated|clk[1]"
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:U1|altpll:altpll_component|pll_altpll:auto_generated|clk[2]"
+set_global_assignment -name VHDL_FILE ../src/pll_cyclone3/pll.vhd
+set_global_assignment -name SOURCE_FILE ../src/pll_cyclone3/pll.cmp
+set_global_assignment -name VHDL_FILE ../src/usbArbiter.vhd
+set_global_assignment -name VHDL_FILE ../src/signalAccumulator.vhd
+set_global_assignment -name VHDL_FILE ../src/receiver.vhd
+set_global_assignment -name VHDL_FILE ../src/QuadDDS20MHz.vhd
+set_global_assignment -name VHDL_FILE ../src/pulseProgrammer.vhd
+set_global_assignment -name VHDL_FILE ../src/phaseCycle.vhd
+set_global_assignment -name VHDL_FILE ../src/phaseController.vhd
+set_global_assignment -name VHDL_FILE ../src/opencoreNMR.vhd
+set_global_assignment -name VHDL_FILE ../src/interface.vhd
+set_global_assignment -name QIP_FILE ../src/pll_cyclone3/pll.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

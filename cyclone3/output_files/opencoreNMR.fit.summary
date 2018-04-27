@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Feb 11 17:31:30 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : opencoreNMR
+Top-level Entity Name : opencoreNMR
+Family : Cyclone III
+Device : EP3C80F780C8
+Timing Models : Final
+Total logic elements : 54,224 / 81,264 ( 67 % )
+    Total combinational functions : 52,427 / 81,264 ( 65 % )
+    Dedicated logic registers : 17,554 / 81,264 ( 22 % )
+Total registers : 17554
+Total pins : 202 / 430 ( 47 % )
+Total virtual pins : 0
+Total memory bits : 1,794,560 / 2,810,880 ( 64 % )
+Embedded Multiplier 9-bit elements : 204 / 488 ( 42 % )
+Total PLLs : 1 / 4 ( 25 % )

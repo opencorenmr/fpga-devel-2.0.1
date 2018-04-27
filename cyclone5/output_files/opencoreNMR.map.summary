@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Feb 21 11:14:08 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : opencoreNMR
+Top-level Entity Name : opencoreNMR
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 19876
+Total pins : 202
+Total virtual pins : 0
+Total block memory bits : 2,482,688
+Total DSP Blocks : 102
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0
