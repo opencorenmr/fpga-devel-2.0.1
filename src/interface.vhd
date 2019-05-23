@@ -743,14 +743,14 @@ architecture RTL of interface is
   --   <CR>   O      P      E      N      C      O      R
      X"45", X"20", X"4E", X"4D", X"52", X"20", X"20",
   --   E   <SPACE>   N      M      R    <SPACE> <SPACE>    
-     X"62", X"75", X"69", X"6C", X"64", X"20", X"32", X"30", X"31", X"31",
-  --   b      u      i      l      d   <SPACE>   2      0       1     1
-     X"20", X"20", X"20", X"20",
-  --   <SPACE> <SPACE> <SPACE> <SPACE> 
+     X"62", X"75", X"69", X"6C", X"64", X"20", X"32", X"30", X"30", X"39",
+  --   b      u      i      l      d   <SPACE>   2      0       0     9
+     X"63", X"20", X"20", X"20",
+  --   c <SPACE> <SPACE> <SPACE> 
   --   X"4D", X"52", X"49", X"20",
   --   M      R      I   <SPACE>
-     X"32", X"30", X"31", X"38", X"20", X"46", X"65", X"62", X"20", X"20",
-  --   2      0      1      8   <SPACE>   F      e      b  <SPACE>  <SPACE>
+     X"32", X"30", X"31", X"36", X"20", X"41", X"70", X"72", X"20", X"20",
+  --   2      0      1      6   <SPACE>   A      p      r  <SPACE>  <SPACE>
      X"62", X"79", X"20", X"4B", X"2E", X"20", X"54", X"61", X"6B", X"65", X"64", X"61",
   --   b      y    <SPACE>  K      .    <SPACE>  T      a      k      e      d      a
 	  X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00",X"00"
@@ -765,8 +765,8 @@ architecture RTL of interface is
 	  X"6F",X"6D",X"6D",X"61",X"6E",X"64",X"00",X"00"  -- ommand <NULL><NULL>
 	);		
 	
-   constant buildNumber: TVeryShortMessage := (x"0D", x"32",x"30",x"31",x"31",x"00",x"00",x"00");	
-	                                          -- <CR>  2     0     1     1    <NULL> <NULL> <NULL>
+   constant buildNumber: TVeryShortMessage := (x"0D", x"32",x"30",x"30",x"39",x"00",x"00",x"00");	
+	                                   -- <CR>  2     0     0     9    <NULL> <NULL> <NULL>
 
    constant clkFreq: TVeryShortMessage := (x"0D", x"31",x"36",x"30",x"00",x"00",x"00",x"00");	
 	                               --  <CR>  1     6     0  <NULL> <NULL>
@@ -1395,8 +1395,8 @@ begin
 			when AD2 =>
 			  if k3Reg = 0 then
 			    stateReg <= AD3;
-           elsif k3Reg=1 then 
-             HADReg <= currentAddress(11 downto 8); stateReg <= AD3;
+           elsif k3Reg = 1 then 
+             HADReg <= '0' & currentAddress(10 downto 8); stateReg <= AD3;
 			  elsif k3Reg=2 then 
             HADReg <= currentAddress(7 downto 4); stateReg <= AD3;
 			  elsif k3Reg=3 then 
@@ -1438,7 +1438,8 @@ begin
          when D1_5 => stateReg <= D2;
          
          when D2 =>
-           addressReg <= AH1QReg & AH2QReg & AH3QReg;
+           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
+--           addressReg <= AH1QReg(1 downto 0) & AH2QReg & AH3QReg;
            stateReg <= D3;
          
          when D3 => stateReg <= D4; -- just for 1-clock delay
@@ -1509,7 +1510,7 @@ begin
              -- Also A(3) must be 0x3D(=), 
              --        otherwise this must be a syntax error.
              stateReg <= E1; 
-           else -- Asci to hexadecimal conversion (12-bit ADDRESS)
+           else -- Asci to hexadecimal conversion (10-bit ADDRESS)
              AH1DReg <= A(0);
              AH2DReg <= A(1);
              AH3DReg <= A(2);
@@ -1520,7 +1521,8 @@ begin
          when W1_5 => stateReg <= W2;
 
          when W2 =>
-           addressReg <= AH1QReg & AH2QReg & AH3QReg;
+           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
+--           addressReg <= AH1QReg(1 downto 0) & AH2QReg & AH3QReg;
            wReg <= 0; wPlus4Reg <= 4;
            stateReg <= W3;
        

@@ -11,8 +11,8 @@ entity opencoreNMR is
 --      lineLength: natural := 96
        bitLength: natural := 112;
        lineLength: natural := 64;
-       ppgAddressBits: natural :=12;
-       ppgAddressLines: natural :=4096
+       ppgAddressBits: natural :=11;
+       ppgAddressLines: natural :=2048
      );
     port(
          CLK1: in std_logic;

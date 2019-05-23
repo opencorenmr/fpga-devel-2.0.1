@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CEFA7F31C8
 set_global_assignment -name TOP_LEVEL_ENTITY opencoreNMR
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:01:13  7月 24, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -52,8 +52,19 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE ../src/usbArbiter.vhd
+set_global_assignment -name VHDL_FILE ../src/signalAccumulator.vhd
+set_global_assignment -name VHDL_FILE ../src/receiver.vhd
+set_global_assignment -name VHDL_FILE ../src/QuadDDS20MHz.vhd
+set_global_assignment -name VHDL_FILE ../src/pulseProgrammer.vhd
+set_global_assignment -name VHDL_FILE ../src/phaseCycle.vhd
+set_global_assignment -name VHDL_FILE ../src/phaseController.vhd
+set_global_assignment -name VHDL_FILE ../src/opencoreNMR.vhd
+set_global_assignment -name VHDL_FILE ../src/interface.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QIP_FILE ../src/pll_cyclone5/pll.qip
+set_global_assignment -name SIP_FILE ../src/pll_cyclone5/pll.sip
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_AK21 -to ADOCLK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to ADOCLK
@@ -473,15 +484,4 @@ set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:U1|pll_0002:
 set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:U1|pll_0002:pll_inst|altera_pll:altera_pll_i|general[1].gpll"
 set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
 set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
-set_global_assignment -name VHDL_FILE ../src/usbArbiter.vhd
-set_global_assignment -name VHDL_FILE ../src/signalAccumulator.vhd
-set_global_assignment -name VHDL_FILE ../src/receiver.vhd
-set_global_assignment -name VHDL_FILE ../src/QuadDDS20MHz.vhd
-set_global_assignment -name VHDL_FILE ../src/pulseProgrammer.vhd
-set_global_assignment -name VHDL_FILE ../src/phaseCycle.vhd
-set_global_assignment -name VHDL_FILE ../src/phaseController.vhd
-set_global_assignment -name VHDL_FILE ../src/opencoreNMR.vhd
-set_global_assignment -name VHDL_FILE ../src/interface.vhd
-set_global_assignment -name QIP_FILE ../src/pll_cyclone5/pll.qip
-set_global_assignment -name SIP_FILE ../src/pll_cyclone5/pll.sip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
