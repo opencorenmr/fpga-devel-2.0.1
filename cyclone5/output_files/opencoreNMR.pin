@@ -1,22 +1,21 @@
- -- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
- -- Your use of Altera Corporation's design tools, logic functions 
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
  -- and other software and tools, and its AMPP partner logic 
  -- functions, and any output files from any of the foregoing 
  -- (including device programming or simulation files), and any 
  -- associated documentation or information are expressly subject 
- -- to the terms and conditions of the Altera Program License 
- -- Subscription Agreement, the Altera Quartus II License Agreement,
- -- the Altera MegaCore Function License Agreement, or other 
- -- applicable license agreement, including, without limitation, 
- -- that your use is for the sole purpose of programming logic 
- -- devices manufactured by Altera and sold by Altera or its 
- -- authorized distributors.  Please refer to the applicable 
- -- agreement for further details.
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
  -- 
- -- This is a Quartus II output file. It is for reporting purposes only, and is
- -- not intended for use as a Quartus II input file. This file cannot be used
- -- to make Quartus II pin assignments - for instructions on how to make pin
- -- assignments, please see Quartus II help.
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
  ---------------------------------------------------------------------------------
 
 
@@ -36,6 +35,7 @@
  --                  Bank 6A:       2.5V
  --                  Bank 7A:  2.5V
  --                  Bank 8A:  2.5V
+ --                  Bank 9A:  Dedicated configuration pins only, no VCCIO required.
  -- RREF          : External reference resistor for the quad, MUST be connected to
  --                 GND via a 2k Ohm resistor.
  -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
@@ -69,7 +69,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 CHIP  "opencoreNMR"  ASSIGNED TO AN: 5CEFA7F31C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -173,15 +173,15 @@ VCCIO3A                      : AC8       : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC9       :        :                   :         : 3A        :                
 VCC_AUX                      : AC10      : power  :                   : 2.5V    :           :                
 VCCPGM                       : AC11      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-VCCPD3B4A                    : AC12      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AC12      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AC13      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC14      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC15      :        :                   :         : 4A        :                
 VCC_AUX                      : AC16      : power  :                   : 2.5V    :           :                
-VCCPD3B4A                    : AC17      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AC17      : power  :                   : 2.5V    : 3B, 4A    :                
 VCCIO4A                      : AC18      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC19      :        :                   :         : 4A        :                
-VCCPD3B4A                    : AC20      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AC20      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4A        :                
 GND                          : AC23      : gnd    :                   :         :           :                
@@ -206,7 +206,7 @@ VCCIO3A                      : AD11      : power  :                   : 2.5V    
 F2AMP[3]                     : AD12      : output : 2.5 V             :         : 3B        : Y              
 F2AMP[4]                     : AD13      : output : 2.5 V             :         : 3B        : Y              
 DNU                          : AD14      :        :                   :         :           :                
-VCCPD3B4A                    : AD15      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AD15      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AD16      : gnd    :                   :         :           :                
 SIG[5]                       : AD17      : input  : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD18      :        :                   :         : 4A        :                
@@ -232,7 +232,7 @@ AS_DATA2, DATA2              : AE7       :        :                   :         
 VREFB3AN0                    : AE8       : power  :                   :         : 3A        :                
 GND                          : AE9       : gnd    :                   :         :           :                
 AMCLK2                       : AE10      : output : 2.5 V             :         : 3B        : Y              
-VCCPD3B4A                    : AE11      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AE11      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3B        :                
 F2AMP[2]                     : AE13      : output : 2.5 V             :         : 3B        : Y              
 VCCIO3B                      : AE14      : power  :                   : 2.5V    : 3B        :                
@@ -242,7 +242,7 @@ SIG[6]                       : AE17      : input  : 2.5 V             :         
 F1AMP[9]                     : AE18      : output : 2.5 V             :         : 4A        : Y              
 GND                          : AE19      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4A        :                
-VCCPD3B4A                    : AE21      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AE21      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 4A        :                
 TRIG_E                       : AE23      : input  : 2.5 V             :         : 5A        : Y              
 VCCIO5A                      : AE24      : power  :                   : 2.5V    : 5A        :                
@@ -483,7 +483,7 @@ OCLK3a                       : D20       : output : 2.5 V             :         
 VCCIO7A                      : D21       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7A        :                
-VCCPD7A8A                    : D24       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : D24       : power  :                   : 2.5V    : 7A, 8A    :                
 F3FREQ_ADD[2]                : D25       : output : 2.5 V             :         : 7A        : Y              
 GND                          : D26       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6A        :                
@@ -530,7 +530,7 @@ VCCIO8A                      : F7        : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8A        :                
 F3FREQ_PS0                   : F9        : output : 2.5 V             :         : 8A        : Y              
 VCCPGM                       : F10       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-VCCPD7A8A                    : F11       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : F11       : power  :                   : 2.5V    : 7A, 8A    :                
 GND                          : F12       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 8A        :                
@@ -540,9 +540,9 @@ VCCIO7A                      : F17       : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 7A        :                
-VCCPD7A8A                    : F21       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : F21       : power  :                   : 2.5V    : 7A, 8A    :                
 GND                          : F22       : gnd    :                   :         :           :                
-VCCPD7A8A                    : F23       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : F23       : power  :                   : 2.5V    : 7A, 8A    :                
 DNU                          : F24       :        :                   :         :           :                
 OCLK2a                       : F25       : output : 2.5 V             :         : 6A        : Y              
 COS2[0]                      : F26       : output : 2.5 V             :         : 6A        : Y              
@@ -562,13 +562,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :      
 VCCIO8A                      : G10       : power  :                   : 2.5V    : 8A        :                
 VCC_AUX                      : G11       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 8A        :                
-VCCPD7A8A                    : G13       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : G13       : power  :                   : 2.5V    : 7A, 8A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 8A        :                
 GND                          : G15       : gnd    :                   :         :           :                
-VCCPD7A8A                    : G16       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : G16       : power  :                   : 2.5V    : 7A, 8A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 7A        :                
-VCCPD7A8A                    : G19       : power  :                   : 2.5V    :           :                
+VCCPD7A8A                    : G19       : power  :                   : 2.5V    : 7A, 8A    :                
 VCCIO7A                      : G20       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 7A        :                

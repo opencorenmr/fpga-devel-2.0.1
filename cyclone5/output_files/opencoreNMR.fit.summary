@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Jan 31 08:08:23 2016
-Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Fitter Status : Successful - Fri May 24 00:22:59 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : opencoreNMR
 Top-level Entity Name : opencoreNMR
 Family : Cyclone V
 Device : 5CEFA7F31C8
 Timing Models : Final
-Logic utilization (in ALMs) : 24,315 / 56,480 ( 43 % )
-Total registers : 17179
+Logic utilization (in ALMs) : 24,311 / 56,480 ( 43 % )
+Total registers : 17207
 Total pins : 202 / 480 ( 42 % )
 Total virtual pins : 0
 Total block memory bits : 1,794,560 / 7,024,640 ( 26 % )
