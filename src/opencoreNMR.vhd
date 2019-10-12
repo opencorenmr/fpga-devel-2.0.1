@@ -96,38 +96,38 @@ end opencoreNMR;
 
 architecture RTL of opencoreNMR is
 
-  component receiver is
-    port(CLK160: in std_logic;
-         CLK80: in std_logic;
-         CLK20: in std_logic;
-         RST: in std_logic;
-         RUNQ: in std_logic;
-         --ADCLK: in std_logic;
-         --AQC: in std_logic;
-         --AQS: in std_logic;
-         SIG: in signed(13 downto 0);
-         ACQ_PHASE: in std_logic_vector(1 downto 0);
-         ACQ_START: in std_logic;
-         RXF_N : in std_logic;
-         TXE_N : in std_logic;
-         RD_N  : out std_logic;
-         WR    : out std_logic;
-         USBDATA: inout std_logic_vector(7 downto 0);
-         ACQ_BUSY: out std_logic;
-         TRANS_BUSY: out std_logic;
-         RG: in std_logic;
-			--
-			AL: in std_logic_vector(31 downto 0);
-		   NA: in std_logic_vector(31 downto 0);
-		   DW: in std_logic_vector(31 downto 0);
-		   ST: in std_logic_vector(31 downto 0);
-		   AF: in std_logic_vector(31 downto 0);
-		   CO_ADDRESS: in std_logic_vector(9 downto 0);
-		   CO_DATA: in std_logic_vector(11 downto 0);
-		   CO_WR: in std_logic;
-		   CO_LENGTH: in std_logic_vector(9 downto 0)
-         );
-  end component;
+--  component receiver is
+--    port(CLK160: in std_logic;
+--         CLK80: in std_logic;
+--         CLK20: in std_logic;
+--         RST: in std_logic;
+--         RUNQ: in std_logic;
+--         --ADCLK: in std_logic;
+--         --AQC: in std_logic;
+--         --AQS: in std_logic;
+--         SIG: in signed(13 downto 0);
+--         ACQ_PHASE: in std_logic_vector(1 downto 0);
+--         ACQ_START: in std_logic;
+--         RXF_N : in std_logic;
+--         TXE_N : in std_logic;
+--         RD_N  : out std_logic;
+--         WR    : out std_logic;
+--         USBDATA: inout std_logic_vector(7 downto 0);
+--         ACQ_BUSY: out std_logic;
+--         TRANS_BUSY: out std_logic;
+--         RG: in std_logic;
+--			--
+--			AL: in std_logic_vector(31 downto 0);
+--		   NA: in std_logic_vector(31 downto 0);
+--		   DW: in std_logic_vector(31 downto 0);
+--		   ST: in std_logic_vector(31 downto 0);
+--		   AF: in std_logic_vector(31 downto 0);
+--		   CO_ADDRESS: in std_logic_vector(9 downto 0);
+--		   CO_DATA: in std_logic_vector(11 downto 0);
+--		   CO_WR: in std_logic;
+--		   CO_LENGTH: in std_logic_vector(9 downto 0)
+--       );
+--  end component;
 
 
   component interface is
@@ -580,33 +580,33 @@ begin
 				  
 				  
 				  
-  U11: receiver port map(
-         CLK160=>CLK160Reg, 
-         CLK80=>CLK80Reg,
-         CLK20=>CLK20Reg,
-         RST=>RSTReg,
-         RUNQ=>runReg,
-         SIG => sigReg,
-         ACQ_PHASE=>acqPhaseReg,
-         ACQ_START=>acqStartReg,
-         RXF_N=>RXF,
-         TXE_N=>TXE,
-         RD_N=>RD,
-         WR =>WR,
-         USBDATA=>USBDATA,
-         ACQ_BUSY=>acqBusyReg,
-         TRANS_BUSY=>transBusyReg,
-         RG=>line1Reg(52),
-			AL => alReg,
-		   NA => naReg,
-		   DW => dwReg,
-		   ST => stReg,
-		   AF => afReg,
-		   CO_ADDRESS => coAddressReg,
-		   CO_DATA => coDataReg,
-		   CO_WR => coWRReg,
-		   CO_LENGTH => coLengthReg	
-         );
+--  U11: receiver port map(
+--         CLK160=>CLK160Reg, 
+--         CLK80=>CLK80Reg,
+--         CLK20=>CLK20Reg,
+--         RST=>RSTReg,
+--         RUNQ=>runReg,
+--         SIG => sigReg,
+--         ACQ_PHASE=>acqPhaseReg,
+--         ACQ_START=>acqStartReg,
+--         RXF_N=>RXF,
+--         TXE_N=>TXE,
+--         RD_N=>RD,
+--         WR =>WR,
+--         USBDATA=>USBDATA,
+--         ACQ_BUSY=>acqBusyReg,
+--         TRANS_BUSY=>transBusyReg,
+--         RG=>line1Reg(52),
+--			AL => alReg,
+--		   NA => naReg,
+--		   DW => dwReg,
+--		   ST => stReg,
+--		   AF => afReg,
+--		   CO_ADDRESS => coAddressReg,
+--		   CO_DATA => coDataReg,
+--		   CO_WR => coWRReg,
+--		   CO_LENGTH => coLengthReg	
+--       );
 
 
   --acqStartReg <= line1Reg(59);

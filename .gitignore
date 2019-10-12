@@ -3,3 +3,7 @@ cyclone5/db/
 cyclone5/incremental_db
 
 cyclone5/opencoreNMR\.qws
+
+*.bak
+
+cyclone5/output_files/
