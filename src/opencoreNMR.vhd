@@ -764,9 +764,9 @@ begin
   
   F1AMP <= line1Reg(28 downto 19);
   
-  GxReg <= line2Reg(28 downto 19); -- + "1000000000";  -- differential output (specific to MRI build)
+  GxReg <= line2Reg(28 downto 19) + "1000000000"; -- differential output (specific to MRI build)
   F2Amp <= GxReg;
-  GyReg <= line3Reg(28 downto 19); -- + "1000000000"; -- differential output (specific to MRI build) 
+  GyReg <= line3Reg(28 downto 19) + "1000000000"; -- differential output (specific to MRI build) 
   F3Amp <= GyReg;
   --F2AMP <= line2Reg(28 downto 19); 
   --F3AMP <= line3Reg(28 downto 19); 
@@ -800,7 +800,7 @@ begin
   AMCLK3 <= CLK160Reg;
   
   GZCLK <= CLK160Reg;
-  GzReg <= line3Reg(41 downto 32); --+"1000000000";  -- differential output (specific to MRI build)
+  GzReg <= line3Reg(41 downto 32) + "1000000000";  -- differential output (specific to MRI build)
   GZ <= GzReg;
  -- INVPLLLOCKED <= not pllLockedReg;
   INVTRANSBUSY <= not (transBusyReg or txBusyReg);  -- LED during signal acquisition & transfer
