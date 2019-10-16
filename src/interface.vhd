@@ -1438,7 +1438,8 @@ begin
          when D1_5 => stateReg <= D2;
          
          when D2 =>
-           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
+           addressReg <= AH1QReg(3 downto 0) & AH2QReg & AH3QReg;
+--           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
 --           addressReg <= AH1QReg(1 downto 0) & AH2QReg & AH3QReg;
            stateReg <= D3;
          
@@ -1521,7 +1522,8 @@ begin
          when W1_5 => stateReg <= W2;
 
          when W2 =>
-           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
+           addressReg <= AH1QReg(3 downto 0) & AH2QReg & AH3QReg;
+--           addressReg <= AH1QReg(2 downto 0) & AH2QReg & AH3QReg;
 --           addressReg <= AH1QReg(1 downto 0) & AH2QReg & AH3QReg;
            wReg <= 0; wPlus4Reg <= 4;
            stateReg <= W3;

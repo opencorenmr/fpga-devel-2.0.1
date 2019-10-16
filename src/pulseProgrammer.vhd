@@ -613,10 +613,12 @@ begin
 
         when J1 =>
           if ((inTrigStateReg and trigWReg) = trigWReg) then
-            runAddressReg <= argReg(ppgAddressBits+28 downto 29);
+            runAddressReg <= argReg(ppgAddressBits+27 downto 28);
+--            runAddressReg <= argReg(ppgAddressBits+28 downto 29);
             stateReg <= R1;
           else
-            runAddressReg <= argReg(ppgAddressBits+17 downto 18);
+            runAddressReg <= argReg(ppgAddressBits+16 downto 17);
+--            runAddressReg <= argReg(ppgAddressBits+17 downto 18);
             stateReg <= R1;
           end if;
 
