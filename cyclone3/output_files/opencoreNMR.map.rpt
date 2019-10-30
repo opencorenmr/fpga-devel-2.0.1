@@ -1,6 +1,6 @@
 Analysis & Synthesis report for opencoreNMR
-Thu Feb 11 16:59:26 2016
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Oct 30 15:06:10 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -9,254 +9,253 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis DSP Block Usage Summary
- 10. Analysis & Synthesis IP Cores Summary
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Physical Synthesis Netlist Optimizations
- 16. Registers Packed Into Inferred Megafunctions
- 17. Registers Added for RAM Pass-Through Logic
- 18. Multiplexer Restructuring Statistics (No Restructuring Performed)
- 19. Source assignments for pulseProgrammer:U5|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
- 20. Source assignments for pulseProgrammer:U6|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
- 21. Source assignments for pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
- 22. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 23. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 24. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 25. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 26. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 27. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 28. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 29. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 30. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 31. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 32. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 33. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 34. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 35. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 36. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 37. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 38. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 39. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 40. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 41. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 42. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 43. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 44. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 45. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 46. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 47. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 48. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 49. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 50. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 51. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 52. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 53. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 54. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 55. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 56. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 57. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 58. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 59. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 60. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 61. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 62. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 63. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 64. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 65. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 66. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
- 67. Source assignments for receiver:U11|altsyncram:FID_real_rtl_0|altsyncram_8h81:auto_generated
- 68. Source assignments for receiver:U11|altsyncram:FID_imag_rtl_0|altsyncram_8h81:auto_generated
- 69. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|acqPhaseCycleMemory:U16|altsyncram:ph_rtl_0|altsyncram_nbc1:auto_generated
- 70. Parameter Settings for User Entity Instance: Top-level Entity: |opencoreNMR
- 71. Parameter Settings for User Entity Instance: pll:U1|altpll:altpll_component
- 72. Parameter Settings for User Entity Instance: interface:U3
- 73. Parameter Settings for User Entity Instance: pulseProgrammer:U5
- 74. Parameter Settings for User Entity Instance: pulseProgrammer:U5|ram:U1
- 75. Parameter Settings for User Entity Instance: pulseProgrammer:U5|lineLatch:U4
- 76. Parameter Settings for User Entity Instance: pulseProgrammer:U6
- 77. Parameter Settings for User Entity Instance: pulseProgrammer:U6|ram:U1
- 78. Parameter Settings for User Entity Instance: pulseProgrammer:U6|lineLatch:U4
- 79. Parameter Settings for User Entity Instance: pulseProgrammer:U7
- 80. Parameter Settings for User Entity Instance: pulseProgrammer:U7|ram:U1
- 81. Parameter Settings for User Entity Instance: pulseProgrammer:U7|lineLatch:U4
- 82. Parameter Settings for User Entity Instance: receiver:U11
- 83. Parameter Settings for User Entity Instance: receiver:U11|signalAccumulator:U2
- 84. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U5|ram:U1|altsyncram:ram_block_rtl_0
- 85. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U6|ram:U1|altsyncram:ram_block_rtl_0
- 86. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0
- 87. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
- 88. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
- 89. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
- 90. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
- 91. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
- 92. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
- 93. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
- 94. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
- 95. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
- 96. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
- 97. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
- 98. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
- 99. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
-100. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
-101. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
-102. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
-103. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
-104. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
-105. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
-106. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
-107. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
-108. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
-109. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
-110. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
-111. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
-112. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
-113. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
-114. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
-115. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
-116. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
-117. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
-118. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
-119. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
-120. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
-121. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
-122. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
-123. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
-124. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
-125. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
-126. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
-127. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
-128. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
-129. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
-130. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
-131. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
-132. Parameter Settings for Inferred Entity Instance: receiver:U11|altsyncram:FID_real_rtl_0
-133. Parameter Settings for Inferred Entity Instance: receiver:U11|altsyncram:FID_imag_rtl_0
-134. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|acqPhaseCycleMemory:U16|altsyncram:ph_rtl_0
-135. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult101
-136. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult50
-137. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult100
-138. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult49
-139. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult99
-140. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult48
-141. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult98
-142. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult47
-143. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult97
-144. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult46
-145. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult96
-146. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult45
-147. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult95
-148. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult44
-149. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult94
-150. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult43
-151. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult93
-152. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult42
-153. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult92
-154. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult41
-155. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult91
-156. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult40
-157. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult90
-158. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult39
-159. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult89
-160. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult38
-161. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult88
-162. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult37
-163. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult87
-164. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult36
-165. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult86
-166. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult35
-167. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult85
-168. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult34
-169. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult84
-170. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult33
-171. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult83
-172. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult32
-173. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult82
-174. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult31
-175. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult81
-176. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult30
-177. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult80
-178. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult29
-179. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult79
-180. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult28
-181. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult78
-182. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult27
-183. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult77
-184. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult26
-185. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult76
-186. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult25
-187. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult75
-188. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult24
-189. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult74
-190. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult23
-191. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult73
-192. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult22
-193. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult72
-194. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult21
-195. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult71
-196. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult20
-197. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult70
-198. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult19
-199. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult69
-200. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult18
-201. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult68
-202. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult17
-203. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult67
-204. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult16
-205. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult66
-206. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult15
-207. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult65
-208. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult14
-209. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult64
-210. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult13
-211. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult63
-212. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult12
-213. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult62
-214. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult11
-215. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult61
-216. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult10
-217. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult60
-218. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult9
-219. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult59
-220. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult8
-221. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult58
-222. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult7
-223. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult57
-224. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult6
-225. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult56
-226. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult5
-227. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult55
-228. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult4
-229. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult54
-230. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult3
-231. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult53
-232. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult2
-233. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult52
-234. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult1
-235. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult51
-236. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult0
-237. altpll Parameter Settings by Entity Instance
-238. altsyncram Parameter Settings by Entity Instance
-239. lpm_mult Parameter Settings by Entity Instance
-240. Port Connectivity Checks: "receiver:U11|usbArbiter:U7"
-241. Port Connectivity Checks: "receiver:U11"
-242. Port Connectivity Checks: "phaseController:U10"
-243. Port Connectivity Checks: "phaseController:U9"
-244. Port Connectivity Checks: "phaseController:U8|phaseCycleMemoryArray:U1|pMux:U0"
-245. Port Connectivity Checks: "pulseProgrammer:U7"
-246. Port Connectivity Checks: "pulseProgrammer:U6"
-247. Port Connectivity Checks: "pulseProgrammer:U5"
-248. Port Connectivity Checks: "interface:U3|FIFO:U8"
-249. Port Connectivity Checks: "interface:U3"
-250. Elapsed Time Per Partition
-251. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Physical Synthesis Netlist Optimizations
+ 15. Registers Packed Into Inferred Megafunctions
+ 16. Registers Added for RAM Pass-Through Logic
+ 17. Multiplexer Restructuring Statistics (No Restructuring Performed)
+ 18. Source assignments for pulseProgrammer:U5|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
+ 19. Source assignments for pulseProgrammer:U6|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
+ 20. Source assignments for pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated
+ 21. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 22. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 23. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 24. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 25. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 26. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 27. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 28. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 29. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 30. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 31. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 32. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 33. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 34. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 35. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 36. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 37. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 38. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 39. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 40. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 41. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 42. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 43. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 44. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 45. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 46. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 47. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 48. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 49. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 50. Source assignments for phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 51. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 52. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 53. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 54. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 55. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 56. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 57. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 58. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 59. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 60. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 61. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 62. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 63. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 64. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 65. Source assignments for phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0|altsyncram_lec1:auto_generated
+ 66. Source assignments for receiver:U11|altsyncram:FID_real_rtl_0|altsyncram_8h81:auto_generated
+ 67. Source assignments for receiver:U11|altsyncram:FID_imag_rtl_0|altsyncram_8h81:auto_generated
+ 68. Source assignments for phaseController:U8|phaseCycleMemoryArray:U1|acqPhaseCycleMemory:U16|altsyncram:ph_rtl_0|altsyncram_nbc1:auto_generated
+ 69. Parameter Settings for User Entity Instance: Top-level Entity: |opencoreNMR
+ 70. Parameter Settings for User Entity Instance: pll:U1|altpll:altpll_component
+ 71. Parameter Settings for User Entity Instance: interface:U3
+ 72. Parameter Settings for User Entity Instance: pulseProgrammer:U5
+ 73. Parameter Settings for User Entity Instance: pulseProgrammer:U5|ram:U1
+ 74. Parameter Settings for User Entity Instance: pulseProgrammer:U5|lineLatch:U4
+ 75. Parameter Settings for User Entity Instance: pulseProgrammer:U6
+ 76. Parameter Settings for User Entity Instance: pulseProgrammer:U6|ram:U1
+ 77. Parameter Settings for User Entity Instance: pulseProgrammer:U6|lineLatch:U4
+ 78. Parameter Settings for User Entity Instance: pulseProgrammer:U7
+ 79. Parameter Settings for User Entity Instance: pulseProgrammer:U7|ram:U1
+ 80. Parameter Settings for User Entity Instance: pulseProgrammer:U7|lineLatch:U4
+ 81. Parameter Settings for User Entity Instance: receiver:U11
+ 82. Parameter Settings for User Entity Instance: receiver:U11|signalAccumulator:U2
+ 83. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U5|ram:U1|altsyncram:ram_block_rtl_0
+ 84. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U6|ram:U1|altsyncram:ram_block_rtl_0
+ 85. Parameter Settings for Inferred Entity Instance: pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0
+ 86. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
+ 87. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
+ 88. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
+ 89. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
+ 90. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
+ 91. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
+ 92. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
+ 93. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
+ 94. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
+ 95. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
+ 96. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
+ 97. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
+ 98. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
+ 99. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
+100. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
+101. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
+102. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
+103. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
+104. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
+105. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
+106. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
+107. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
+108. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
+109. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
+110. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
+111. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
+112. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
+113. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
+114. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
+115. Parameter Settings for Inferred Entity Instance: phaseController:U9|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
+116. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U1|altsyncram:ph_rtl_0
+117. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U2|altsyncram:ph_rtl_0
+118. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U3|altsyncram:ph_rtl_0
+119. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U4|altsyncram:ph_rtl_0
+120. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U5|altsyncram:ph_rtl_0
+121. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U6|altsyncram:ph_rtl_0
+122. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U7|altsyncram:ph_rtl_0
+123. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U8|altsyncram:ph_rtl_0
+124. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U9|altsyncram:ph_rtl_0
+125. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U10|altsyncram:ph_rtl_0
+126. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U11|altsyncram:ph_rtl_0
+127. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U12|altsyncram:ph_rtl_0
+128. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U13|altsyncram:ph_rtl_0
+129. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U14|altsyncram:ph_rtl_0
+130. Parameter Settings for Inferred Entity Instance: phaseController:U10|phaseCycleMemoryArray:U1|phaseCycleMemory:U15|altsyncram:ph_rtl_0
+131. Parameter Settings for Inferred Entity Instance: receiver:U11|altsyncram:FID_real_rtl_0
+132. Parameter Settings for Inferred Entity Instance: receiver:U11|altsyncram:FID_imag_rtl_0
+133. Parameter Settings for Inferred Entity Instance: phaseController:U8|phaseCycleMemoryArray:U1|acqPhaseCycleMemory:U16|altsyncram:ph_rtl_0
+134. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult101
+135. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult50
+136. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult100
+137. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult49
+138. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult99
+139. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult48
+140. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult98
+141. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult47
+142. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult97
+143. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult46
+144. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult96
+145. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult45
+146. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult95
+147. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult44
+148. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult94
+149. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult43
+150. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult93
+151. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult42
+152. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult92
+153. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult41
+154. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult91
+155. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult40
+156. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult90
+157. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult39
+158. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult89
+159. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult38
+160. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult88
+161. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult37
+162. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult87
+163. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult36
+164. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult86
+165. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult35
+166. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult85
+167. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult34
+168. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult84
+169. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult33
+170. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult83
+171. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult32
+172. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult82
+173. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult31
+174. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult81
+175. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult30
+176. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult80
+177. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult29
+178. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult79
+179. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult28
+180. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult78
+181. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult27
+182. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult77
+183. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult26
+184. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult76
+185. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult25
+186. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult75
+187. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult24
+188. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult74
+189. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult23
+190. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult73
+191. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult22
+192. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult72
+193. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult21
+194. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult71
+195. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult20
+196. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult70
+197. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult19
+198. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult69
+199. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult18
+200. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult68
+201. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult17
+202. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult67
+203. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult16
+204. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult66
+205. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult15
+206. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult65
+207. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult14
+208. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult64
+209. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult13
+210. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult63
+211. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult12
+212. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult62
+213. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult11
+214. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult61
+215. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult10
+216. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult60
+217. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult9
+218. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult59
+219. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult8
+220. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult58
+221. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult7
+222. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult57
+223. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult6
+224. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult56
+225. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult5
+226. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult55
+227. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult4
+228. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult54
+229. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult3
+230. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult53
+231. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult2
+232. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult52
+233. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult1
+234. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult51
+235. Parameter Settings for Inferred Entity Instance: receiver:U11|lpm_mult:Mult0
+236. altpll Parameter Settings by Entity Instance
+237. altsyncram Parameter Settings by Entity Instance
+238. lpm_mult Parameter Settings by Entity Instance
+239. Port Connectivity Checks: "receiver:U11|usbArbiter:U7"
+240. Port Connectivity Checks: "receiver:U11"
+241. Port Connectivity Checks: "phaseController:U10"
+242. Port Connectivity Checks: "phaseController:U9"
+243. Port Connectivity Checks: "phaseController:U8|phaseCycleMemoryArray:U1|pMux:U0"
+244. Port Connectivity Checks: "pulseProgrammer:U7"
+245. Port Connectivity Checks: "pulseProgrammer:U6"
+246. Port Connectivity Checks: "pulseProgrammer:U5"
+247. Port Connectivity Checks: "interface:U3|FIFO:U8"
+248. Port Connectivity Checks: "interface:U3"
+249. Elapsed Time Per Partition
+250. Analysis & Synthesis Messages
 
 
 
@@ -279,24 +278,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 11 16:59:25 2016           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; opencoreNMR                                     ;
-; Top-level Entity Name              ; opencoreNMR                                     ;
-; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 57,930                                          ;
-;     Total combinational functions  ; 52,251                                          ;
-;     Dedicated logic registers      ; 19,900                                          ;
-; Total registers                    ; 19900                                           ;
-; Total pins                         ; 202                                             ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 1,794,560                                       ;
-; Embedded Multiplier 9-bit elements ; 204                                             ;
-; Total PLLs                         ; 1                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Oct 30 15:06:06 2019      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; opencoreNMR                                ;
+; Top-level Entity Name              ; opencoreNMR                                ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 57,929                                     ;
+;     Total combinational functions  ; 52,250                                     ;
+;     Dedicated logic registers      ; 19,900                                     ;
+; Total registers                    ; 19900                                      ;
+; Total pins                         ; 202                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 1,794,560                                  ;
+; Embedded Multiplier 9-bit elements ; 204                                        ;
+; Total PLLs                         ; 1                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -386,60 +385,49 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 2      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
-; ../src/pll_cyclone3/pll.vhd      ; yes             ; User Wizard-Generated File   ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/pll_cyclone3/pll.vhd        ;         ;
-; ../src/usbArbiter.vhd            ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/usbArbiter.vhd              ;         ;
-; ../src/signalAccumulator.vhd     ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/signalAccumulator.vhd       ;         ;
-; ../src/receiver.vhd              ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/receiver.vhd                ;         ;
-; ../src/QuadDDS20MHz.vhd          ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/QuadDDS20MHz.vhd            ;         ;
-; ../src/pulseProgrammer.vhd       ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/pulseProgrammer.vhd         ;         ;
-; ../src/phaseCycle.vhd            ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/phaseCycle.vhd              ;         ;
-; ../src/phaseController.vhd       ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/phaseController.vhd         ;         ;
-; ../src/opencoreNMR.vhd           ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/opencoreNMR.vhd             ;         ;
-; ../src/interface.vhd             ; yes             ; User VHDL File               ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/interface.vhd               ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf            ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/pll_altpll.v        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_sg81.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/altsyncram_sg81.tdf ;         ;
-; db/altsyncram_lec1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/altsyncram_lec1.tdf ;         ;
-; db/altsyncram_8h81.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/altsyncram_8h81.tdf ;         ;
-; db/decode_ara.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/decode_ara.tdf      ;         ;
-; db/decode_37a.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/decode_37a.tdf      ;         ;
-; db/mux_7nb.tdf                   ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/mux_7nb.tdf         ;         ;
-; db/altsyncram_nbc1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/altsyncram_nbc1.tdf ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc          ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; /home/takezo/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; db/mult_k4t.tdf                  ; yes             ; Auto-Generated Megafunction  ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/cyclone3/db/mult_k4t.tdf        ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
+; ../src/pll_cyclone3/pll.vhd      ; yes             ; User Wizard-Generated File   ; /home/takeda/dev/fpga-devel-2.0.1/src/pll_cyclone3/pll.vhd                         ;         ;
+; ../src/usbArbiter.vhd            ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/usbArbiter.vhd                               ;         ;
+; ../src/signalAccumulator.vhd     ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/signalAccumulator.vhd                        ;         ;
+; ../src/receiver.vhd              ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/receiver.vhd                                 ;         ;
+; ../src/QuadDDS20MHz.vhd          ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/QuadDDS20MHz.vhd                             ;         ;
+; ../src/pulseProgrammer.vhd       ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/pulseProgrammer.vhd                          ;         ;
+; ../src/phaseCycle.vhd            ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/phaseCycle.vhd                               ;         ;
+; ../src/phaseController.vhd       ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/phaseController.vhd                          ;         ;
+; ../src/opencoreNMR.vhd           ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/opencoreNMR.vhd                              ;         ;
+; ../src/interface.vhd             ; yes             ; User VHDL File               ; /home/takeda/dev/fpga-devel-2.0.1/src/interface.vhd                                ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altpll.tdf            ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc        ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/pll_altpll.v                         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_sg81.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/altsyncram_sg81.tdf                  ;         ;
+; db/altsyncram_lec1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/altsyncram_lec1.tdf                  ;         ;
+; db/altsyncram_8h81.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/altsyncram_8h81.tdf                  ;         ;
+; db/decode_ara.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/decode_ara.tdf                       ;         ;
+; db/decode_37a.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/decode_37a.tdf                       ;         ;
+; db/mux_7nb.tdf                   ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/mux_7nb.tdf                          ;         ;
+; db/altsyncram_nbc1.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/altsyncram_nbc1.tdf                  ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/multcore.inc          ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; /home/takeda/dev/altera/13.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mult_k4t.tdf                  ; yes             ; Auto-Generated Megafunction  ; /home/takeda/dev/fpga-devel-2.0.1/cyclone3/db/mult_k4t.tdf                         ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -447,16 +435,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                     ;
 +---------------------------------------------+---------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 57,930                                                                    ;
+; Estimated Total logic elements              ; 57,929                                                                    ;
 ;                                             ;                                                                           ;
-; Total combinational functions               ; 52251                                                                     ;
+; Total combinational functions               ; 52250                                                                     ;
 ; Logic element usage by number of LUT inputs ;                                                                           ;
 ;     -- 4 input functions                    ; 43755                                                                     ;
 ;     -- 3 input functions                    ; 6197                                                                      ;
-;     -- <=2 input functions                  ; 2299                                                                      ;
+;     -- <=2 input functions                  ; 2298                                                                      ;
 ;                                             ;                                                                           ;
 ; Logic elements by mode                      ;                                                                           ;
-;     -- normal mode                          ; 47151                                                                     ;
+;     -- normal mode                          ; 47150                                                                     ;
 ;     -- arithmetic mode                      ; 5100                                                                      ;
 ;                                             ;                                                                           ;
 ; Total registers                             ; 19900                                                                     ;
@@ -471,7 +459,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                                                                           ;
 ; Maximum fan-out node                        ; pll:U1|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 20816                                                                     ;
-; Total fan-out                               ; 265814                                                                    ;
+; Total fan-out                               ; 265813                                                                    ;
 ; Average fan-out                             ; 3.61                                                                      ;
 +---------------------------------------------+---------------------------------------------------------------------------+
 
@@ -481,7 +469,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                 ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |opencoreNMR                                    ; 52251 (112)       ; 19900 (86)   ; 1794560     ; 204          ; 0       ; 102       ; 202  ; 0            ; |opencoreNMR                                                                                                                        ; work         ;
+; |opencoreNMR                                    ; 52250 (112)       ; 19900 (86)   ; 1794560     ; 204          ; 0       ; 102       ; 202  ; 0            ; |opencoreNMR                                                                                                                        ; work         ;
 ;    |interface:U3|                               ; 38833 (38171)     ; 9701 (9080)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|interface:U3                                                                                                           ; work         ;
 ;       |FIFO:U8|                                 ; 450 (450)         ; 526 (526)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|interface:U3|FIFO:U8                                                                                                   ; work         ;
 ;       |Rx:U2|                                   ; 77 (46)           ; 36 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|interface:U3|Rx:U2                                                                                                     ; work         ;
@@ -664,7 +652,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |altsyncram:ram_block_rtl_0|           ; 0 (0)             ; 0 (0)        ; 229376      ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0                                                                   ; work         ;
 ;             |altsyncram_sg81:auto_generated|    ; 0 (0)             ; 0 (0)        ; 229376      ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|pulseProgrammer:U7|ram:U1|altsyncram:ram_block_rtl_0|altsyncram_sg81:auto_generated                                    ; work         ;
 ;       |timer:U2|                                ; 53 (53)           ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|pulseProgrammer:U7|timer:U2                                                                                            ; work         ;
-;    |receiver:U11|                               ; 4530 (3831)       ; 6889 (6523)  ; 1048576     ; 204          ; 0       ; 102       ; 0    ; 0            ; |opencoreNMR|receiver:U11                                                                                                           ; work         ;
+;    |receiver:U11|                               ; 4529 (3830)       ; 6889 (6523)  ; 1048576     ; 204          ; 0       ; 102       ; 0    ; 0            ; |opencoreNMR|receiver:U11                                                                                                           ; work         ;
 ;       |altsyncram:FID_imag_rtl_0|               ; 26 (0)            ; 1 (0)        ; 524288      ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|receiver:U11|altsyncram:FID_imag_rtl_0                                                                                 ; work         ;
 ;          |altsyncram_8h81:auto_generated|       ; 26 (0)            ; 1 (1)        ; 524288      ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|receiver:U11|altsyncram:FID_imag_rtl_0|altsyncram_8h81:auto_generated                                                  ; work         ;
 ;             |decode_ara:decode3|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |opencoreNMR|receiver:U11|altsyncram:FID_imag_rtl_0|altsyncram_8h81:auto_generated|decode_ara:decode3                               ; work         ;
@@ -959,13 +947,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                            ;
-+--------+--------------+---------+--------------+--------------+---------------------+----------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File                                                            ;
-+--------+--------------+---------+--------------+--------------+---------------------+----------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |opencoreNMR|pll:U1 ; /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/pll_cyclone3/pll.vhd ;
-+--------+--------------+---------+--------------+--------------+---------------------+----------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                            ;
++--------+--------------+---------+--------------+--------------+---------------------+------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance     ; IP Include File                                            ;
++--------+--------------+---------+--------------+--------------+---------------------+------------------------------------------------------------+
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |opencoreNMR|pll:U1 ; /home/takeda/dev/fpga-devel-2.0.1/src/pll_cyclone3/pll.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------+------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -1051,17 +1039,17 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; pulseProgrammer:U5|inTrigStateReg[4]          ; Merged with pulseProgrammer:U5|inTrigStateNotReg[4]        ;
 ; pulseProgrammer:U5|inTrigStateReg[5]          ; Merged with pulseProgrammer:U5|inTrigStateNotReg[5]        ;
 ; receiver:U11|INTF_stateReg[5..7]              ; Merged with receiver:U11|INTF_stateReg[4]                  ;
-; phaseController:U8|QuadDDS20MHz:U2|ph1CReg[0] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[0] ;
-; phaseController:U9|QuadDDS20MHz:U2|ph1CReg[0] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[0] ;
-; phaseController:U8|QuadDDS20MHz:U2|ph1CReg[1] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[1] ;
-; phaseController:U9|QuadDDS20MHz:U2|ph1CReg[1] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[1] ;
 ; phaseController:U8|QuadDDS20MHz:U2|ph1CReg[2] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[2] ;
 ; phaseController:U9|QuadDDS20MHz:U2|ph1CReg[2] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[2] ;
-; pulseProgrammer:U6|inTrigStateNotReg[0]       ; Merged with pulseProgrammer:U5|inTrigStateNotReg[0]        ;
-; pulseProgrammer:U7|inTrigStateNotReg[0]       ; Merged with pulseProgrammer:U5|inTrigStateNotReg[0]        ;
+; phaseController:U8|QuadDDS20MHz:U2|ph1CReg[1] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[1] ;
+; phaseController:U9|QuadDDS20MHz:U2|ph1CReg[1] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[1] ;
+; phaseController:U8|QuadDDS20MHz:U2|ph1CReg[0] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[0] ;
+; phaseController:U9|QuadDDS20MHz:U2|ph1CReg[0] ; Merged with phaseController:U10|QuadDDS20MHz:U2|ph1CReg[0] ;
 ; interface:U3|hexToA:U3|QReg[5]                ; Merged with interface:U3|hexToA:U3|QReg[4]                 ;
 ; pulseProgrammer:U6|inTrigStateReg[0]          ; Merged with pulseProgrammer:U5|inTrigStateReg[0]           ;
 ; pulseProgrammer:U7|inTrigStateReg[0]          ; Merged with pulseProgrammer:U5|inTrigStateReg[0]           ;
+; pulseProgrammer:U6|inTrigStateNotReg[0]       ; Merged with pulseProgrammer:U5|inTrigStateNotReg[0]        ;
+; pulseProgrammer:U7|inTrigStateNotReg[0]       ; Merged with pulseProgrammer:U5|inTrigStateNotReg[0]        ;
 ; interface:U3|messageReg[7]                    ; Stuck at GND due to stuck port data_in                     ;
 ; receiver:U11|CSImagReg[1][24]                 ; Merged with receiver:U11|CSImagReg[1][23]                  ;
 ; receiver:U11|CSImagReg[1][25]                 ; Merged with receiver:U11|CSImagReg[1][23]                  ;
@@ -16221,7 +16209,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:09:25     ;
+; Top            ; 00:27:20     ;
 +----------------+--------------+
 
 
@@ -16230,26 +16218,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Feb 11 16:47:22 2016
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Oct 30 14:38:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off opencoreNMR -c opencoreNMR
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/pll_cyclone3/pll.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/pll_cyclone3/pll.vhd
     Info (12022): Found design unit 1: pll-SYN
     Info (12023): Found entity 1: pll
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/usbArbiter.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/usbArbiter.vhd
     Info (12022): Found design unit 1: usbArbiter-RTL
     Info (12023): Found entity 1: usbArbiter
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/signalAccumulator.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/signalAccumulator.vhd
     Info (12022): Found design unit 1: signalAccumulator-RTL
     Info (12023): Found entity 1: signalAccumulator
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/receiver.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/receiver.vhd
     Info (12022): Found design unit 1: receiver-RTL
     Info (12023): Found entity 1: receiver
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/QuadDDS20MHz.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/QuadDDS20MHz.vhd
     Info (12022): Found design unit 1: QuadDDS20MHz-RTL
     Info (12023): Found entity 1: QuadDDS20MHz
-Info (12021): Found 8 design units, including 4 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/pulseProgrammer.vhd
+Info (12021): Found 8 design units, including 4 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/pulseProgrammer.vhd
     Info (12022): Found design unit 1: ram-RTL
     Info (12022): Found design unit 2: timer-RTL
     Info (12022): Found design unit 3: lineLatch-RTL
@@ -16258,7 +16246,7 @@ Info (12021): Found 8 design units, including 4 entities, in source file /home/t
     Info (12023): Found entity 2: timer
     Info (12023): Found entity 3: lineLatch
     Info (12023): Found entity 4: pulseProgrammer
-Info (12021): Found 8 design units, including 4 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/phaseCycle.vhd
+Info (12021): Found 8 design units, including 4 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/phaseCycle.vhd
     Info (12022): Found design unit 1: acqPhaseCycleMemory-RTL
     Info (12022): Found design unit 2: phaseCycleMemory-RTL
     Info (12022): Found design unit 3: pMux-RTL
@@ -16267,13 +16255,13 @@ Info (12021): Found 8 design units, including 4 entities, in source file /home/t
     Info (12023): Found entity 2: phaseCycleMemory
     Info (12023): Found entity 3: pMux
     Info (12023): Found entity 4: phaseCycleMemoryArray
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/phaseController.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/phaseController.vhd
     Info (12022): Found design unit 1: phaseController-RTL
     Info (12023): Found entity 1: phaseController
-Info (12021): Found 2 design units, including 1 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/opencoreNMR.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/opencoreNMR.vhd
     Info (12022): Found design unit 1: opencoreNMR-RTL
     Info (12023): Found entity 1: opencoreNMR
-Info (12021): Found 16 design units, including 8 entities, in source file /home/takezo/Dropbox/nmr-FPGA/build2009c-20160421/src/interface.vhd
+Info (12021): Found 16 design units, including 8 entities, in source file /home/takeda/dev/fpga-devel-2.0.1/src/interface.vhd
     Info (12022): Found design unit 1: TxBaudGen-RTL
     Info (12022): Found design unit 2: Tx-RTL
     Info (12022): Found design unit 3: FIFO-RTL
@@ -17421,21 +17409,21 @@ Info (128002): Starting physical synthesis algorithm register retiming
 Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
 Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 1124 ps
-Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:01:58
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:04:09
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 59695 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 59694 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 171 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 58372 logic cells
+    Info (21061): Implemented 58371 logic cells
     Info (21064): Implemented 916 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 204 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 67 warnings
-    Info: Peak virtual memory: 1968 megabytes
-    Info: Processing ended: Thu Feb 11 16:59:27 2016
-    Info: Elapsed time: 00:12:05
-    Info: Total CPU time (on all processors): 00:10:16
+    Info: Peak virtual memory: 1972 megabytes
+    Info: Processing ended: Wed Oct 30 15:06:10 2019
+    Info: Elapsed time: 00:28:05
+    Info: Total CPU time (on all processors): 00:07:19
 
 

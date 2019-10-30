@@ -1,6 +1,6 @@
 Flow report for opencoreNMR
-Thu Feb 11 17:35:33 2016
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Oct 30 16:32:52 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 11 17:35:32 2016           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; opencoreNMR                                     ;
-; Top-level Entity Name              ; opencoreNMR                                     ;
-; Family                             ; Cyclone III                                     ;
-; Device                             ; EP3C80F780C8                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 54,224 / 81,264 ( 67 % )                        ;
-;     Total combinational functions  ; 52,427 / 81,264 ( 65 % )                        ;
-;     Dedicated logic registers      ; 17,554 / 81,264 ( 22 % )                        ;
-; Total registers                    ; 17554                                           ;
-; Total pins                         ; 202 / 430 ( 47 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 1,794,560 / 2,810,880 ( 64 % )                  ;
-; Embedded Multiplier 9-bit elements ; 204 / 488 ( 42 % )                              ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Wed Oct 30 16:32:52 2019      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; opencoreNMR                                ;
+; Top-level Entity Name              ; opencoreNMR                                ;
+; Family                             ; Cyclone III                                ;
+; Device                             ; EP3C80F780C8                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 54,251 / 81,264 ( 67 % )                   ;
+;     Total combinational functions  ; 52,421 / 81,264 ( 65 % )                   ;
+;     Dedicated logic registers      ; 17,554 / 81,264 ( 22 % )                   ;
+; Total registers                    ; 17554                                      ;
+; Total pins                         ; 202 / 430 ( 47 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 1,794,560 / 2,810,880 ( 64 % )             ;
+; Embedded Multiplier 9-bit elements ; 204 / 488 ( 42 % )                         ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
++------------------------------------+--------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/11/2016 16:47:23 ;
+; Start date & time ; 10/30/2019 14:38:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; opencoreNMR         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ applicable agreement for further details.
 ; Assignment Name                              ; Value                       ; Default Value ; Entity Name ; Section Id     ;
 +----------------------------------------------+-----------------------------+---------------+-------------+----------------+
 ; AUTO_PACKED_REGISTERS_STRATIXII              ; Normal                      ; Auto          ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                        ; 52227627003.145517684346755 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                        ; 0.157241388617953           ; --            ; --          ; --             ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE             ; Speed                       ; Balanced      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                       ; Vhdl                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                          ; ModelSim-Altera (VHDL)      ; <None>        ; --          ; --             ;
@@ -104,44 +104,35 @@ applicable agreement for further details.
 +----------------------------------------------+-----------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:11:52     ; 1.0                     ; 1968 MB             ; 00:10:16                           ;
-; Fitter                    ; 00:31:49     ; 1.0                     ; 1694 MB             ; 00:31:32                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 732 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:01:01     ; 1.0                     ; 1295 MB             ; 00:00:59                           ;
-; Design Assistant          ; 00:00:18     ; 1.0                     ; 1266 MB             ; 00:00:18                           ;
-; EDA Netlist Writer        ; 00:01:36     ; 1.0                     ; 1347 MB             ; 00:01:32                           ;
-; Total                     ; 00:46:46     ; --                      ; --                  ; 00:44:46                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:27:44     ; 1.0                     ; 1972 MB             ; 00:07:10                           ;
+; Fitter               ; 01:15:18     ; 1.0                     ; 1788 MB             ; 00:29:20                           ;
+; Assembler            ; 00:00:16     ; 1.0                     ; 790 MB              ; 00:00:07                           ;
+; Total                ; 01:43:18     ; --                      ; --                  ; 00:36:37                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                             ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-; Fitter                    ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-; Assembler                 ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-; TimeQuest Timing Analyzer ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-; Design Assistant          ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-; EDA Netlist Writer        ; ubuntu           ; Ubuntu 14.04.2 ; 14         ; x86_64         ;
-+---------------------------+------------------+----------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; takedaMint       ; Linux Mint ; 18         ; x86_64         ;
+; Fitter               ; takedaMint       ; Linux Mint ; 18         ; x86_64         ;
+; Assembler            ; takedaMint       ; Linux Mint ; 18         ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off opencoreNMR -c opencoreNMR
-quartus_fit --read_settings_files=off --write_settings_files=off opencoreNMR -c opencoreNMR
-quartus_asm --read_settings_files=off --write_settings_files=off opencoreNMR -c opencoreNMR
-quartus_sta opencoreNMR -c opencoreNMR
-quartus_drc --read_settings_files=off --write_settings_files=off opencoreNMR -c opencoreNMR
-quartus_eda --read_settings_files=off --write_settings_files=off opencoreNMR -c opencoreNMR
+quartus_fit --read_settings_files=on --write_settings_files=off opencoreNMR -c opencoreNMR
+quartus_asm --read_settings_files=on --write_settings_files=off opencoreNMR -c opencoreNMR
 
 
 
