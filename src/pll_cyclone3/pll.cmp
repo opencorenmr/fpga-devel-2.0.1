@@ -16,9 +16,9 @@
 component pll
 	PORT
 	(
-		refclk		: IN STD_LOGIC  := '0';
-		outclk_0		: OUT STD_LOGIC ;
-		outclk_1		: OUT STD_LOGIC ;
-		outclk_2		: OUT STD_LOGIC 
+		inclk0		: IN STD_LOGIC  := '0';
+		c0		: OUT STD_LOGIC ;
+		c1		: OUT STD_LOGIC ;
+		c2		: OUT STD_LOGIC 
 	);
 end component;

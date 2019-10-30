@@ -58,7 +58,7 @@ set_location_assignment PIN_B22 -to ADOCLK
 set_location_assignment PIN_C4 -to AMCLK1
 set_location_assignment PIN_F12 -to AMCLK2
 set_location_assignment PIN_D19 -to AMCLK3
-set_location_assignment PIN_Y2 -to CLK1
+set_location_assignment PIN_J28 -to CLK1
 set_location_assignment PIN_Y3 -to COS1[9]
 set_location_assignment PIN_Y4 -to COS1[8]
 set_location_assignment PIN_AA3 -to COS1[7]

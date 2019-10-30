@@ -193,12 +193,12 @@ architecture RTL of opencoreNMR is
 
 
   component PLL is  -- in 10M, out 20, 80, 160 MHz
-	PORT(
-		refclk		: IN STD_LOGIC  := '0';
-	--	rst: IN STD_LOGIC:='0';
-		outclk_0		: OUT STD_LOGIC ;   -- 20 MHz
-		outclk_1:     OUT std_logic;  -- 80 MHz
-		outclk_2      : OUT STD_LOGIC    -- 160 MHz
+	PORT
+	(
+		inclk0		: IN STD_LOGIC  := '0';
+		c0		: OUT STD_LOGIC ; -- 20 M
+		c1		: OUT STD_LOGIC ; -- 80 M
+		c2		: OUT STD_LOGIC   -- 160 M
 	);
   end component;
 
@@ -282,11 +282,10 @@ architecture RTL of opencoreNMR is
 begin
 	
   U1: PLL port map(
-    refclk => CLK1,
-	-- rst=>RSTReg,
-    outclk_0=>CLK20Reg,
-    outclk_1=>CLK80Reg,
-    outclk_2=>CLK160Reg
+    inclk0 => CLK1,
+    c0=>CLK20Reg,
+    c1=>CLK80Reg,
+    c2=>CLK160Reg
   );
   
   U3: interface 

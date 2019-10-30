@@ -1,5 +1,5 @@
 Flow report for opencoreNMR
-Wed Oct 30 16:32:52 2019
+Thu Oct 31 07:30:06 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 30 16:32:52 2019      ;
+; Flow Status                        ; Successful - Thu Oct 31 07:30:06 2019      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; opencoreNMR                                ;
 ; Top-level Entity Name              ; opencoreNMR                                ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C80F780C8                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 54,251 / 81,264 ( 67 % )                   ;
-;     Total combinational functions  ; 52,421 / 81,264 ( 65 % )                   ;
+; Total logic elements               ; 54,128 / 81,264 ( 67 % )                   ;
+;     Total combinational functions  ; 52,333 / 81,264 ( 64 % )                   ;
 ;     Dedicated logic registers      ; 17,554 / 81,264 ( 22 % )                   ;
 ; Total registers                    ; 17554                                      ;
 ; Total pins                         ; 202 / 430 ( 47 % )                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/30/2019 14:38:06 ;
+; Start date & time ; 10/30/2019 23:22:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; opencoreNMR         ;
 +-------------------+---------------------+
@@ -76,14 +76,14 @@ applicable agreement for further details.
 ; Assignment Name                              ; Value                       ; Default Value ; Entity Name ; Section Id     ;
 +----------------------------------------------+-----------------------------+---------------+-------------+----------------+
 ; AUTO_PACKED_REGISTERS_STRATIXII              ; Normal                      ; Auto          ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                        ; 0.157241388617953           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                        ; 0.157244532223320           ; --            ; --          ; --             ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE             ; Speed                       ; Balanced      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                       ; Vhdl                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                          ; ModelSim-Altera (VHDL)      ; <None>        ; --          ; --             ;
 ; ENABLE_DRC_SETTINGS                          ; On                          ; Off           ; --          ; --             ;
 ; FITTER_EFFORT                                ; Standard Fit                ; Auto Fit      ; --          ; --             ;
 ; IP_TOOL_NAME                                 ; ALTPLL                      ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                              ; 13.0                        ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                              ; 13.1                        ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP                       ; 85                          ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP                       ; 0                           ; --            ; --          ; --             ;
 ; MISC_FILE                                    ; ../src/pll_cyclone3/pll.cmp ; --            ; --          ; --             ;
@@ -109,10 +109,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:27:44     ; 1.0                     ; 1972 MB             ; 00:07:10                           ;
-; Fitter               ; 01:15:18     ; 1.0                     ; 1788 MB             ; 00:29:20                           ;
-; Assembler            ; 00:00:16     ; 1.0                     ; 790 MB              ; 00:00:07                           ;
-; Total                ; 01:43:18     ; --                      ; --                  ; 00:36:37                           ;
+; Analysis & Synthesis ; 00:17:29     ; 1.0                     ; 2020 MB             ; 00:07:28                           ;
+; Fitter               ; 01:13:20     ; 1.0                     ; 1785 MB             ; 00:31:06                           ;
+; Assembler            ; 00:00:20     ; 1.0                     ; 782 MB              ; 00:00:09                           ;
+; Total                ; 01:31:09     ; --                      ; --                  ; 00:38:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

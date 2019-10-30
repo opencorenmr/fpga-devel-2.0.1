@@ -539,7 +539,7 @@ NC                           : J24       :        :                   :         
 GZ[5]                        : J25       : output : 2.5 V             :         : 6         : Y              
 GZ[6]                        : J26       : output : 2.5 V             :         : 6         : Y              
 GND+                         : J27       :        :                   :         : 6         :                
-GND+                         : J28       :        :                   :         : 6         :                
+CLK1                         : J28       : input  : 2.5 V             :         : 6         : Y              
 TTL_GND[2]                   : K1        : output : 2.5 V             :         : 1         : Y              
 F1TTL[0]                     : K2        : output : 2.5 V             :         : 1         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
@@ -821,7 +821,7 @@ F3SYNCLK                     : W26       : input  : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
 F3FREQ_FUD                   : W28       : output : 2.5 V             :         : 5         : Y              
 GND+                         : Y1        :        :                   :         : 2         :                
-CLK1                         : Y2        : input  : 2.5 V             :         : 2         : Y              
+GND+                         : Y2        :        :                   :         : 2         :                
 COS1[9]                      : Y3        : output : 2.5 V             :         : 2         : Y              
 COS1[8]                      : Y4        : output : 2.5 V             :         : 2         : Y              
 NC                           : Y5        :        :                   :         :           :                
