@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Oct 30 23:39:48 2019
+Analysis & Synthesis Status : Successful - Fri Nov  1 09:58:25 2019
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : opencoreNMR
 Top-level Entity Name : opencoreNMR
 Family : Cyclone III
-Total logic elements : 57,905
-    Total combinational functions : 52,226
+Total logic elements : 57,923
+    Total combinational functions : 52,244
     Dedicated logic registers : 19,900
 Total registers : 19900
 Total pins : 202

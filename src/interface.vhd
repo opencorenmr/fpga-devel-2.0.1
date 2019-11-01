@@ -745,7 +745,7 @@ architecture RTL of interface is
   --   E   <SPACE>   N      M      R    <SPACE> <SPACE>    
      X"62", X"75", X"69", X"6C", X"64", X"20", X"32", X"30", X"30", X"39",
   --   b      u      i      l      d   <SPACE>   2      0       0     9
-     X"6C", X"20", X"20", X"20",
+     X"69", X"20", X"20", X"20",
   --   i <SPACE> <SPACE> <SPACE> 
   --   X"4D", X"52", X"49", X"20",
   --   M      R      I   <SPACE>
@@ -765,7 +765,7 @@ architecture RTL of interface is
 	  X"6F",X"6D",X"6D",X"61",X"6E",X"64",X"00",X"00"  -- ommand <NULL><NULL>
 	);		
 	
-   constant buildNumber: TVeryShortMessage := (x"0D", x"32",x"30",x"30",x"69",x"00",x"00",x"00");	
+   constant buildNumber: TVeryShortMessage := (x"0D", x"32",x"30",x"30",x"39",x"69",x"00",x"00");	
 	                                   -- <CR>  2     0     0     9    i <NULL> <NULL>
 
    constant clkFreq: TVeryShortMessage := (x"0D", x"31",x"36",x"30",x"00",x"00",x"00",x"00");	
